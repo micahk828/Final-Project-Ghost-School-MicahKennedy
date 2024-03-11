@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ghost School Final</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="favicon.png" rel="icon" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+  <script type="text/javascript">
+    function myFunction() {
+     var inputVal =  document.getElementById('myInput').value;
+     var seconds = inputVal, $seconds = document.querySelector('#countdown');
+     (function countdown() {
+           $seconds.textContent = seconds + ' second' + (seconds == 1 ?  '' :  's')
+           if(seconds --> 0) setTimeout(countdown, 1000)
+       })();
+    }
+  </script>
+</head>
+<body>
+  <div class="banner">
+		<h1 id="banner">Thomas A. Edison CTE HS</h1>
+    <img src=taehs.png id="ban">
+		<img src="avatar.png" id="logo">
+		<h1 id="banner">Web Developer Academy</h1>
+		<h1 id="banner">Final Project Ghost School</h1>
+		<h1 id="banner">January 2024</h1>
+		<h1 id="banner">Micah Kennedy</h1>
+	</div>
+	<div class="container">
+		<div class="wave" id="l1">
+			Instructions<br>
+			<br>
+      <h3>Select your level of choice Look at both pictures carefully and spot the differences. You only can look at each picture for 5 seconds each. Good Luck and Try Your Best!!! Below is an example:</h3>
+      <img src="example.jpg" width="500">
+		</div>
+		<div class="wave" id="easy">
+      <h1>Easy Level</h1>
+      <br>
+			<h3>Before <----> After</h3>
+    <img src="poster.png" width='600'
+      onmouseover="this.src='easy1.png';"
+      onmouseout="this.src='poster.png';">
+    <img src="poster.png" width='600'
+      onmouseover="this.src='easy2.png';"
+      onmouseout="this.src='poster.png';">
+      <center><input type="text" id="myInput" placeholder="Enter number..." >
+      <button onclick="myFunction()">Start Counter</button>  
+      <span id="countdown"></span></center>
+			</div>
+		<div class="wave" id="medium">
+      <h1>Medium Level</h1>
+        <br>
+        <h3>Before <----> After</h3>
+      <img src="poster.png" width='600'
+        onmouseover="this.src='medium1.png';"
+        onmouseout="this.src='poster.png';">
+      <img src="poster.png" width='600'
+        onmouseover="this.src='medium2.png';"
+        onmouseout="this.src='poster.png';">
+      <center><input type="text" id="myInput" placeholder="Enter number..." >
+      <button onclick="myFunction()">Start Counter</button>  
+      <span id="countdown"></span></center>
+		</div>
+		<div class="wave" id="hard">
+      <h1>Hard Level</h1>
+        <br>
+        <h3>Before <----> After</h3>
+      <img src="poster.png" width='600'
+        onmouseover="this.src='hard1.png';"
+        onmouseout="this.src='poster.png';">
+      <img src="poster.png" width='600'
+        onmouseover="this.src='hard2.png';"
+        onmouseout="this.src='poster.png';">
+      <center><input type="text" id="myInput" placeholder="Enter number..." >
+      <button onclick="myFunction()">Start Counter</button>  
+      <span id="countdown"></span></center>
+		</div>
+		
+	
+		</div>
+
+</body>
+
+</html>
